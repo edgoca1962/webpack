@@ -1,0 +1,36 @@
+{
+  "name": "assets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "build": "webpack build --mode=production",
+    "watch": "NODE_OPTIONS='--no-deprecation' webpack --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.6.6",
+    "webpack": "^5.105.4",
+    "webpack-cli": "^7.0.2",
+    "webpack-dev-server": "^5.2.3"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.2.0",
+    "@popperjs/core": "^2.11.8",
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.3.8",
+    "bootstrap-icons": "^1.13.1",
+    "browser-sync-webpack-plugin": "^2.4.0",
+    "chart.js": "^4.5.1",
+    "css-loader": "^7.1.4",
+    "intl-tel-input": "^26.8.1",
+    "mini-css-extract-plugin": "^2.10.1",
+    "postcss-loader": "^8.2.1",
+    "sass": "^1.98.0",
+    "sass-loader": "^16.0.7",
+    "style-loader": "^4.0.0",
+    "sweetalert2": "^11.26.24"
+  }
+}

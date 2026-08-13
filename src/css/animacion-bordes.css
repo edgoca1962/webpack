@@ -1,0 +1,44 @@
+@property --angle {
+   syntax: "<angle>";
+   initial-value: 0deg;
+   inherits: false;
+}
+
+.b_color:hover::before,
+.b_color:hover::after {
+   content: "";
+   position: absolute;
+   inset: -3px;
+   z-index: -1;
+   background: conic-gradient(from var(--angle),#d11149,
+      #e68aff,
+      #ff4800,
+      #11ebff,
+      #cdff58,
+      #d11149);
+   border-radius: inherit;
+   animation: rotacion 3.5s linear infinite;
+}
+.saldos:hover::before,
+.saldos:hover::after {
+   content: "";
+   position: absolute;
+   inset: -3px;
+   z-index: -1;
+   background: conic-gradient(from var(--angle), transparent 90%,white);
+   border-radius: inherit;
+   animation: rotacion 3.5s linear infinite;
+}
+.b_color::after{
+   filter: blur(10px);
+}
+
+@keyframes rotacion {
+   from {
+      --angle: 0deg;
+   }
+
+   to {
+      --angle: 360deg;
+   }
+}
