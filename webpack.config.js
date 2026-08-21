@@ -10,7 +10,7 @@ module.exports = {
       main: "./src/source.js",
    },
    output: {
-      path: path.resolve(__dirname, "../themes/sgf/assets/"),
+      path: path.resolve(__dirname, "../themes/fwk/assets/"),
       filename: "[name].js",
    },
    module: {

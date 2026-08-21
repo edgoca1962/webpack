@@ -14,7 +14,7 @@ import calendario from './js/calendario'
 import core from './js/core'
 import csvfile from './js/csvfile'
 import libros from './js/libros'
-// import paypal from './js/paypal'
+
 import perfilusuario from './js/perfilusuario'
 import presupuesto from './js/presupuesto'
 import sgf from './js/sgf'
