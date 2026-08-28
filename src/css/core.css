@@ -214,6 +214,10 @@ body.lang-en [lang='en'] {
 /******************************************************************************
 * Animación para secciones.
 ******************************************************************************/
+.bg-beige {
+  background-color: #d9d9d9;
+}
+
 .autoShow {
   animation: text-appear both;
   animation-timeline: view();
@@ -254,6 +258,10 @@ body.lang-en [lang='en'] {
   );
 }
 
+.scroll-container:hover .scroll-content {
+  animation-play-state: paused;
+}
+
 .scroll-content {
   display: inline-block;
   animation: scroll-horizontal 20s linear infinite;
@@ -278,8 +286,4 @@ body.lang-en [lang='en'] {
   to {
     transform: translateX(-50%);
   }
-}
-
-.scroll-container:hover .scroll-content {
-  animation-play-state: paused;
 }
