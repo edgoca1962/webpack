@@ -1,21 +1,21 @@
-@import "bootstrap/scss/_functions";
+@import "bootstrap/scss/functions";
 
 $min-contrast-ratio: 2.1;
 $primary: #f2683d;
 $enable-negative-margins: true;
 $box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .75);
+$font-family-sans-serif: 'Roboto Condensed Variable', sans-serif;
 
-@import "bootstrap/scss/_variables";
+@import "bootstrap/scss/variables";
 @import "bootstrap/scss/variables-dark";
 
 $custom-colors: (
    "whatsapp": #25D366,
-   "mcsverde" :#2baab1,
-   "mcsmorado" :#ae66dd,
-   "mcsazul" :#409af7
+   "mcsverde": #2baab1,
+   "mcsmorado": #ae66dd,
+   "mcsazul": #409af7
 );
-
-$theme-colors: map-merge($custom-colors, $theme-colors);
+$theme-colors: map-merge($theme-colors, $custom-colors);
 
 @import "bootstrap/scss/maps";
 @import "bootstrap/scss/mixins";
@@ -26,7 +26,7 @@ $all-colors: map-merge-multiple($blues, $indigos, $purples, $pinks, $reds, $oran
 $utilities: map-merge($utilities,
       ("background-color": map-merge(map-get($utilities, "background-color"),
             (values: map-merge(map-get(map-get($utilities, "background-color"), "values"),
-                  ($all-colors ),
+                  ($all-colors),
                ),
             ),
          ),
@@ -34,7 +34,7 @@ $utilities: map-merge($utilities,
 $utilities: map-merge($utilities,
       ("color": map-merge(map-get($utilities, "color"),
             (values: map-merge(map-get(map-get($utilities, "color"), "values"),
-                  ($all-colors ),
+                  ($all-colors),
                ),
             ),
          ),

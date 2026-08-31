@@ -1,12 +1,15 @@
 :root {
-  --bs-font-family: 'Roboto Condensed', sans-serif;
   --bs-font-principal: 'Syne', sans-serif;
   --font-second: 'Lato', sans-serif;
 }
-.paleta {
-  color: rgb(239, 72, 111) /*Bubblegum Pink*/ rgb(255, 209, 102) /*Royal Gold*/
-    rgb(6, 214, 160) /*Emerald*/ rgb(17, 138, 178) /*Ocean Blue*/ rgb(7, 59, 76); /*Dark Teal*/
-}
+
+/* 
+rgb(239, 72, 111) Bubblegum Pink 
+rgb(255, 209, 102) Royal Gold
+rgb(6, 214, 160) Emerald 
+rgb(17, 138, 178) Ocean Blue 
+rgb(7, 59, 76); Dark Teal 
+*/
 
 .font-principal {
   font-family: var(--bs-font-principal) !important;
@@ -17,10 +20,6 @@
   font-family: var(--font-second) !important;
   font-weight: 300;
   font-style: normal;
-}
-body {
-  font-family: var(--bs-font-family) !important;
-  /* background-color: rgb(0, 116, 156); */
 }
 
 a {

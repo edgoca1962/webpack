@@ -10,7 +10,7 @@ module.exports = {
       main: "./src/source.js",
    },
    output: {
-      path: path.resolve(__dirname, "../themes/fwk/assets/"),
+      path: path.resolve(__dirname, "../themes/wp-modulado/assets/"),
       filename: "[name].js",
    },
    module: {
