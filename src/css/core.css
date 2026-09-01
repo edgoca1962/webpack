@@ -11,6 +11,10 @@ rgb(17, 138, 178) Ocean Blue
 rgb(7, 59, 76); Dark Teal 
 */
 
+body {
+  padding-top: 48px;
+}
+
 .font-principal {
   font-family: var(--bs-font-principal) !important;
   font-weight: 300;
@@ -45,6 +49,14 @@ a:hover {
   opacity: 0.66;
 }
 /******************************************************************************
+* Navbar logo
+******************************************************************************/
+.navbar .custom-logo {
+  max-height: 48px;
+  width: auto;
+}
+
+/******************************************************************************
 * Cambio de idioma para mostrar solo el contenido del idioma activo.
 ******************************************************************************/
 body.lang-es [lang='en'] {
@@ -60,48 +72,8 @@ body.lang-en [lang='es'] {
 body.lang-en [lang='en'] {
   display: inline-block !important;
 }
+
 /******************************************************************************
-* Formato para menu Bootstrap
-******************************************************************************/
-.active {
-  background-color: var(--bs-secondary);
-  border-radius: 5%;
-  padding-left: 1em;
-}
-/* Cambia background en collapse*/
-.navbar {
-  transition: background-color 0.3s ease;
-}
-
-.navbar.navbar-collapsed {
-  background-color: var(--bs-tertiary-bg) !important;
-}
-/*Modifica la flecha del submenu*/
-@media (max-width: 992px) {
-  .dropdown-toggle::before {
-    transform: rotate(-90deg);
-  }
-  .active {
-    border-radius: 0%;
-  }
-}
-#site-navbar {
-  @media (max-width: 991.98px) {
-    background-color: var(--bs-tertiary-bg) !important;
-  }
-}
-
-/** Paddding para colapso de menu. */
-@media (max-width: 991.98px) {
-  .navbar-nav .nav-item {
-    padding-left: 1em;
-  }
-}
-@media (min-width: 992px) {
-  .navbar-nav .nav-item {
-    padding-left: 0;
-  }
-} /******************************************************************************
 * Formato para paginación
 ******************************************************************************/
 .pagination {
