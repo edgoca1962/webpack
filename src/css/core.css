@@ -11,10 +11,6 @@ rgb(17, 138, 178) Ocean Blue
 rgb(7, 59, 76); Dark Teal 
 */
 
-body {
-  padding-top: 48px;
-}
-
 .font-principal {
   font-family: var(--bs-font-principal) !important;
   font-weight: 300;
